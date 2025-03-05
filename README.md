@@ -22,8 +22,8 @@ Follow these steps to set up the project locally:
 
 1. *Clone the repository*
    
-   git clone https://github.com/RR0327/All-In-One-University.git
-   cd All-In-One-University
+   git clone https://github.com/shaikat020/all-in-one.git
+   cd all-in-one
    
 
 2. *Create a virtual environment (optional but recommended)*
@@ -59,7 +59,7 @@ Follow these steps to set up the project locally:
 
 ## Project Structure
 
-All-In-One-University/
+all-in-one/
 │-- university_app/
 │   ├── migrations/
 │   ├── static/
