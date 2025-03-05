@@ -68,12 +68,13 @@ All-In-One/
 │   ├── views.py
 │   ├── models.py
 │   ├── urls.py
-│   ├── admin.py
+│   └── admin.py
 │-- db.sqlite3
 │-- manage.py
 │-- requirements.txt
 │-- .gitignore
-│-- README.md
+└── README.md
+
 
 
 ## Contributor
