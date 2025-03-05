@@ -22,7 +22,7 @@ Follow these steps to set up the project locally:
 
 1. *Clone the repository*
    
-   git clone https://github.com/shaikat020/all-in-one-university.git
+   git clone https://github.com/shaikat020/all-in-one.git
    cd All-In-One-University
    
 
