@@ -1,65 +1,65 @@
-<h1 align="center">All-in-One University App – Revolutionizing Student Life </h1>
+# All-In-One University Management System
 
 ## Overview
-All-In-One is a University Management System built using Django (Python), HTML, CSS, and JavaScript. This project helps manage university-related tasks such as student records, faculty details, course management, and more.
+All-In-One is a *University Management System* built using *Django (Python), HTML, CSS, and JavaScript*. This project helps manage university-related tasks such as student records, faculty details, course management, and more.
 
 ## Features
-- User Authentication (Admin, Faculty, Students)  
-- Student and Faculty Management  
-- Course Registration & Management  
-- Attendance Tracking  
-- Exam & Results Management  
-- Notices & Announcements  
-- Responsive UI
+- *User Authentication* (Admin, Faculty, Students)  
+- *Student and Faculty Management*  
+- *Course Registration & Management*  
+- *Attendance Tracking*  
+- *Exam & Results Management*  
+- *Notices & Announcements*  
+- *Responsive UI*
 
 ## Technologies Used
-- Backend: Python (Django Framework)  
-- Frontend: HTML, CSS, JavaScript  
-- Database: SQLite / MySQL (configurable)
+- *Backend:* Python (Django Framework)  
+- *Frontend:* HTML, CSS, JavaScript  
+- *Database:* SQLite / MySQL (configurable)
 
 ## Installation
 Follow these steps to set up the project locally:
 
-1. Clone the repository
+1. *Clone the repository*
    
-   git clone https://github.com/shaikat/All-In-One.git
+   git clone https://github.com/shaikat020/All-In-One.git
    cd All-In-One
    
 
-2. Create a virtual environment (optional but recommended)
+2. *Create a virtual environment (optional but recommended)*
    
    python -m venv venv
    source venv/bin/activate  # On Windows use: venv\Scripts\activate
    
 
-3. Install dependencies
+3. *Install dependencies*
    
    pip install -r requirements.txt
    
 
-4. Apply migrations
+4. *Apply migrations*
    
    python manage.py migrate
    
 
-5. Create a superuser (admin account)
+5. *Create a superuser (admin account)*
    
    python manage.py createsuperuser
    
 
-6. Run the server
+6. *Run the server*
    
    python manage.py runserver
    
 
-7. Open in browser
+7. *Open in browser*
    
    http://127.0.0.1:8000
    
 
 ## Project Structure
 
-All-In-One-University/
+All-In-One/
 │-- university_app/
 │   ├── migrations/
 │   ├── static/
@@ -75,14 +75,14 @@ All-In-One-University/
 │-- README.md
 
 
-## Contributors
+## Contributor
 Md Rakibul Hassan
 
 ## Contributing
 Feel free to contribute! Fork the repository, make changes, and submit a pull request.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the *MIT License*.
 
 ## Contact
-For queries or suggestions, contact: tahsin.azad.skt@gmail.com 
+For queries or suggestions, contact: *tahsin.azad.skt@gmail.com*
