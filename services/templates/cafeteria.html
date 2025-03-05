@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Cafeteria Menu for {{ today }}</h2>
+  {% if menus %}
+    <ul>
+      {% for item in menus %}
+        <li>
+          <strong>{{ item.meal_name }}</strong> - 
+          {{ item.description }} (Price: {{ item.price }})
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No cafeteria menu found for today.</p>
+  {% endif %}
+{% endblock %}

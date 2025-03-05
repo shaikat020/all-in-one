@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Bus Routes & Schedules</h2>
+  <h3>Routes</h3>
+  <ul>
+    {% for route in routes %}
+      <li>{{ route.route_name }}: {{ route.start_location }} to {{ route.end_location }}</li>
+    {% endfor %}
+  </ul>
+  <h3>Schedules</h3>
+  <ul>
+    {% for schedule in schedules %}
+      <li>{{ schedule.route.route_name }}:
+          Departs at {{ schedule.departure_time }},
+          Arrives at {{ schedule.arrival_time }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

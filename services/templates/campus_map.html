@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Campus Map</h2>
+  <p>This is where you'd integrate a map or AR feature. For now, we list buildings.</p>
+  <ul>
+    {% for b in buildings %}
+      <li>{{ b.building_name }} (Lat: {{ b.latitude }}, Lon: {{ b.longitude }})</li>
+    {% endfor %}
+  </ul>
+  <!-- 
+    Potentially integrate a JavaScript map library here (like Leaflet.js or 
+    Google Maps) to visualize building locations on a map.
+  -->
+{% endblock %}

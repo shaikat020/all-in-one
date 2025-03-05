@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Class Schedules</h2>
+  <ul>
+    {% for sched in schedules %}
+      <li>
+        <strong>{{ sched.course.course_name }}</strong> 
+        ({{ sched.day_of_week }}, {{ sched.start_time }} - {{ sched.end_time }})
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Faculty Contacts</h2>
+  <ul>
+    {% for f in faculty %}
+      <li>{{ f.name }} ({{ f.department }}) - {{ f.email }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

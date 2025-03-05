@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>All-in-One University App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1>All-in-One University App</h1>
+      <nav>
+        <a href="{% url 'index' %}">Home</a> |
+        <a href="{% url 'cafeteria' %}">Cafeteria</a> |
+        <a href="{% url 'bus_schedules' %}">Bus Schedules</a> |
+        <a href="{% url 'class_schedules' %}">Class Schedules</a> |
+        <a href="{% url 'events' %}">Events</a> |
+        <a href="{% url 'campus_map' %}">Campus Map</a> |
+        {% if user.is_authenticated %}
+          <a href="{% url 'logout' %}">Logout</a>
+        {% else %}
+          <a href="{% url 'login' %}">Login</a>
+        {% endif %}
+      </nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>University Events</h2>
+  <ul>
+    {% for event in events %}
+      <li>
+        <strong>{{ event.event_name }}</strong> 
+        on {{ event.event_date }} 
+        {% if event.club %}
+          (Hosted by {{ event.club.club_name }})
+        {% endif %}
+        <br>
+        {{ event.description }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Clubs</h2>
+  <ul>
+    {% for c in clubs %}
+      <li>
+        <strong>{{ c.club_name }}</strong> - {{ c.description }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
