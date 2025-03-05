@@ -59,6 +59,7 @@ Follow these steps to set up the project locally:
 
 ## Project Structure
 
+
 All-In-One/
 │-- university_app/
 │   ├── migrations/
